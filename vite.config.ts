@@ -11,6 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   const VITE_SERVER_URL = env.VITE_SERVER_URL;
+  console.log("VITE_SERVER_URL", VITE_SERVER_URL);
   return {
     server: {
       port: 3000,
