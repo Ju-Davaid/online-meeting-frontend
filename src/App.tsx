@@ -3,8 +3,9 @@ import Login from "@/pages/Login";
 
 const App = () => {
   return (
-    <Routes>
+    <Routes >
       <Route path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 };

@@ -17,3 +17,11 @@ export interface onFinishProps {
   captcha: string;
   remember: boolean;
 }
+
+/**
+ * 右侧区域组件通用 Props
+ */
+export interface SectionProps {
+  /** 切换右侧区域 */
+  changeSection: (section: string) => void;
+}
